@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!--Шрифт меню-->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,700&display=swap&subset=cyrillic" rel="stylesheet">
+    
+    <!--Шрифт подвала-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    
+    <!--Шрифт основного контента-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <!--Шрифт заголовков-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    
+    <!--Подключение иконок-->
+    <script src="https://kit.fontawesome.com/52b72f7123.js" crossorigin="anonymous"></script>
+    
+    <!--Параллакс-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/index.js"></script>
+    
+    <title>Галактика</title>
+    
+</head>
+<body>
+    
+    <!--Навигационное меню-->
+    
+    <input type="checkbox" id="nav-toggle" hidden>
+    
+    <nav class="nav">
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        
+        <h2 class="logo"> 
+            <img src="assets/images/horse2.png">
+        </h2>
+        
+        <ul>
+            <li><a href="#about">О нас</a>
+            <li><a href="#news">Последние новости</a>
+            <li><a href="#horses">Наши лошади</a>
+            <li><a href="#services">Услуги и цены</a>
+            <li><a href="#gallery">Фотогалерея</a>
+            <li><a href="#contacts">Контакты</a> 
+        </ul>
+
+        <div class="social instagram">
+            <a href="https://www.instagram.com/kk_galaktika/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <div class="social vk">
+            <a href="https://vk.com/kk.galaktika" target="_blank"><i class="fab fa-vk"></i></a>    
+        </div>
+        
+    </nav>
+    
+    <!--Затемнение фона-->
+    
+    <div class="mask-content">
+    </div>
+    
+    <!--Приветствие-->
+    
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/introbg.png"></div>
+    
+    <!--О нас-->
+    
+    <p><a name="about"></a></p>
+    
+    <section class = "section">
+        <div class = "container">
+            <div class="about">
+                <h1 class = "section__title">О нас</h1>
+                <div class="description">Вы уверенно сидите в седле и хотите развивать свое мастерство дальше? Или вы только мечтаете почувствовать себя всадником? Конный Клуб Галактика ждет всех и новичков и уже умеющих всадников, детей и взрослых на занятия по верховой езде. В нашем клубе Вы сможете сполна насладиться общением с этими грациозными животными, научиться держаться в седле или усовершенствовать свои навыки. Также наш клуб проводит на постоянной основе прогулки на лошадях по прекрасным живописным местам ближайшего Подмосковья.</div>
+                
+                <!--Аккордеон-->
+                
+                <div class = "general">
+                    <div class = "general__item">
+                        <img class = "near__accordion" src = "assets/images/accordion.jpg" width=560px>
+                    </div>
+                    <div class = "general__item">
+                        <div class = "accordion">
+                            <div class = "accordion__item">
+                                <div class = "accordion__header">
+                                    <img class = "accordion__icon" src = "assets/images/icons/horse%20(2).svg" width=40px>
+                                    <div class = "accordion__title">Тренировки</div>
+                                </div>
+                                <div class = "accordion__content">
+                                    Начать ездить верхом никогда не поздно! Тех, кто только собирается попробовать себя в конном спорте, наши тренера готовы обучить с нуля всем основам, научить правильно и уверенно держаться на лошади.<br> 
+                                    Опытные всадники, желающие развиваться дальше, могут приобрести у нас занятия по специализации. Для любителей классики есть выездка и конкур, а для тех, кого больше увлекает экзотика, можем предложить тренировки по вестерну.<br>
+                                </div>
+                            </div>
+                            <div class = "accordion__item">
+                                <div class = "accordion__header">
+                                    <img class = "accordion__icon" src = "assets/images/icons/horse%20(1).svg" width=40px>
+                                    
+                                    <div class = "accordion__title">Постой</div>
+                                </div>
+                                <div class = "accordion__content">
+                                    Что включает в себя такая услуга, как постой лошади в КК "Галактика"?
+                                    <br>
+                                    Денники 3*3,4; <br>
+                                    Подстилка опилки; <br>
+                                    Подбивка 2 раза в день; <br>
+                                    Автопоилки; <br>
+                                    Кормление 3 раза в день: <br>
+                                    Утро - сено, запаренный овес <br>
+                                    День - сено, каша <br>
+                                    Вечер - сено, запаренный овес; <br>
+                                    Выгул от 2х часов в день; <br>
+                                    Теплая раздевалка, шкафчики, амуничник, туалет; <br>
+                                    Для работы 2 плаца (один огорожен) открытая бочка, небольшой манеж.
+                                </div>
+                            </div>
+                            <div class = "accordion__item">
+                                <div class = "accordion__header">
+                                    <img class = "accordion__icon" src = "assets/images/icons/horse%20(4).svg" width=40px>
+                                    <div class = "accordion__title">Соревнования</div>
+                                </div>
+                                <div class = "accordion__content">
+                                В нашем клубе соревнования не редкость! Мы рады, когда ученики хотят показать себя. За информацией о соревнованиях следите в группе ВКонтакте и профиле Instagram.</div>
+                            </div>
+                            <div class = "accordion__item">
+                                <div class = "accordion__header">
+                                    <img class = "accordion__icon" src = "assets/images/icons/horse(7).svg" width=40px>
+                                    <div class = "accordion__title">Экскурсии</div>
+                                </div>
+                                <div class = "accordion__content">
+                                В КК "Галактика" вы можете заказать экскурсию по окрестностям конюшни и познакомиться с нашими лошадьми. Подробности о проведении узнавайте у тренеров.</div>
+                            </div>
+                            <div class = "accordion__item">
+                                <div class = "accordion__header">
+                                    <img class = "accordion__icon" src = "assets/images/icons/horse.svg" width=40px>
+                                    <div class = "accordion__title">Прогулки</div>
+                                </div>
+                                <div class = "accordion__content">
+                                У нас проводятся интересные конные прогулки длительностью от 1 часа по живописным лесам и полям; по желанию: в зимний - период катание на санях, в летний - купание с лошадками. Услуга доступна не только опытным всадникам, для тех, кто совсем недавно сел в седло мы проводим прогулки шагом.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn" href="#contacts">Запись на занятие</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--Новости-->
+    <p><a name="news"></a></p>
+    
+    <section class = "section">
+        <div class = "container">
+            
+            <h1 class = "section__title">Последние новости</h1>
+            
+            <div class="blog">
+                
+                <div class="blog__item">
+                    <div class = "blog__header">
+                        <a href="#">
+                            <img class = "blog__photo" src="assets/images/blog/item1.png">
+                        </a>
+                        <div class = "blog__date">
+                            <div class = "blog__date-day">13</div>Oct
+                        </div>
+                    </div>    
+                    <div class = "blog__content">
+                        <div class = "blog__title">
+                            <a href="#">Соревнования 13.10.2018</a>
+                        </div>
+                        <div class = "blog__text">Соревнования на базе нашего конного клуба.</div>
+                    </div>
+                    <div class = "blog__footer">
+                        <div class = "blog-stat">
+                            <span class = "blog-stat__item">
+                                <i class="fas fa-eye"></i> 517
+                            </span>
+                            <span class = "blog-stat__item">
+                                <i class="fas fa-comments"></i> 12
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__item">
+                    <div class = "blog__header">
+                        <a href="#">
+                            <img class = "blog__photo" src="assets/images/blog/item2.png">
+                        </a>
+                        <div class = "blog__date">
+                            <div class = "blog__date-day">27</div>May
+                        </div>
+                    </div>    
+                    <div class = "blog__content">
+                        <div class = "blog__title">
+                            <a href="#">Соревнования 27.05.2018</a>
+                        </div>
+                        <div class = "blog__text">Старты по выездке. КСК "Белая дача" - 27.05.18</div>
+                    </div>
+                    <div class = "blog__footer">
+                        <div class = "blog-stat">
+                            <span class = "blog-stat__item">
+                                <i class="fas fa-eye"></i> 517
+                            </span>
+                            <span class = "blog-stat__item">
+                                <i class="fas fa-comments"></i> 12
+                            </span>
+                        </div>
+                    </div>
+                </div>                
+                
+                <div class="blog__item">
+                    <div class = "blog__header">
+                        <a href="#">
+                            <img class = "blog__photo" src="assets/images/blog/item3.png">
+                        </a>
+                        <div class = "blog__date">
+                            <div class = "blog__date-day">20</div>May
+                        </div>
+                    </div>    
+                    <div class = "blog__content">
+                        <div class = "blog__title">
+                            <a href="#">Соревнования 20.05.2018</a>
+                        </div>
+                        <div class = "blog__text">Первые официальные старты 2018 года - выездка. КСК "Русский Алмаз" - 20.05.18</div>
+                    </div>
+                    <div class = "blog__footer">
+                        <div class = "blog-stat">
+                            <span class = "blog-stat__item">
+                                <i class="fas fa-eye"></i> 517
+                            </span>
+                            <span class = "blog-stat__item">
+                                <i class="fas fa-comments"></i> 12
+                            </span>
+                        </div>
+                    </div>
+                </div>                
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <!--Наши лошади-->
+    <p><a name="horses"></a></p>
+    
+    <section class = "section">
+        <div class = "container">
+            <h1 class = "section__title">Наши лошади</h1>
+            <div class = "our-horses">
+                <!--Барселона-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Bars.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Барселона
+                    </div>
+                    <div class = "horse__description">
+                        Тяжеловозная помесь.<br>
+                        Пол: кобыла<br>
+                        11 лет
+                    </div>
+                </div>
+                <!--Верба-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Verba.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Верба
+                    </div>
+                    <div class = "horse__description">
+                        Советский тяжеловоз<br>
+                        Пол: кобыла<br>
+                        Возраст: 14 лет
+                    </div>
+                </div>
+                <!--Юпитер-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Yupy.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Юпитер
+                    </div>
+                    <div class = "horse__description">
+                        Башкирской породы.<br>
+                        Пол: мерин<br>
+                        11 лет
+                    </div>
+                </div>
+            </div> <!--Закрыта первая строка-->
+
+            <div class = "our-horses">
+                <!--Соловей-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Solo.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Соловей
+                    </div>
+                    <div class = "horse__description">
+                        Помесь башкирской породы и пони.<br>
+                        Пол: мерин<br>
+                        5 лет
+                    </div>
+                </div>
+                <!--Бониэлла-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Bon.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Бониэлла
+                    </div>
+                </div>
+                <!--Глория-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Glory.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Глория
+                    </div>
+                    <div class = "horse__description">
+                        Спортивная помесь.<br>
+                        Пол: кобыла<br>
+                        9 лет
+                    </div>
+                </div>
+            </div>
+            <div class = "our-horses">
+                <!--Малыш-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Mal.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Малыш
+                    </div>
+                    <div class = "horse__description">
+                        Помесь русского рысака и шетлендского пони.<br>
+                        Пол: мерин<br>
+                        10 лет
+                    </div>
+                </div>
+                <!--Идальго-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Idalgo.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Идальго
+                    </div>
+                    <div class = "horse__description">
+                        Шетлендский пони.<br>
+                        Пол: мерин<br>
+                        9 лет
+                    </div>
+                </div>
+                <!--Манона-->
+                <div class = "horse__item">
+                    <div class = "horse__img">
+                        <img src = "assets/images/ourhorses/OH-Manona.png" alt = "">
+                    </div>
+                    <div class = "horse__text">
+                        Манона
+                    </div>
+                    <div class = "horse__description">
+                        Башкирской породы.<br>
+                        Пол: кобыла<br>
+                        6 лет
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </section>
+    
+    <!--Услуги и цены-->
+    <p><a name="services"></a></p>
+    
+    <section class = "section">
+        <div class = "container">
+            <div class="price-and-services">
+                <h1 class = "section__title">Услуги и цены</h1>
+            <div class="price-list">
+                <table>
+                    <tr>    
+                        <th><b>Наименование услуги</b></th><th><b>Описание</b></th><th><b>Цена</b></th>
+                    </tr>
+                    <tr>
+                        <td>Обучение верховой езде (в группе)</td><td>Обучение верховой езде с нуля, коррекция посадки, подготовка к стартам, выезды на соревнования.</td><td>Будние дни: <br>
+                        30 минут - 800 рублей,<br>
+                        1 час - 1500 рублей; <br>
+                        Выходные и праздничные дни: <br>
+                        30 рублей - 1000 рублей,<br>
+                        1 час - 1600 рублей</td>
+                    </tr>
+                    <tr>
+                        <td>Индивидуальная тренировка</td><td>Строго по предварительной записи.</td><td>2500 рублей/час</td>
+                    </tr>
+                    <tr>
+                        <td>Абонемент (4 занятия)
+                        </td>
+                        <td>Абонемент необходимо отходить за месяц.
+                        </td>
+                        <td>Будние дни: <br>
+                        по 30 минут - 3000 рублей; <br>
+                        по 1 часу - 5000 рублей; <br>
+                        Выходные и праздниные дни: <br>
+                        30 рублей - 3500 рулей; <br>
+                        1 час - 6000 рублей
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Абонемент (8 занятий)
+                        </td>
+                        <td>Абонемент необходимо отходить за месяц.
+                        </td>
+                        <td>Будние дни: <br>
+                        по 30 минут - 5000 рублей; <br>
+                        по 1 часу - 9000 рублей; <br>
+                        Выходные и праздниные дни: <br>
+                        30 рублей - 6000 рулей; <br>
+                        1 час - 11000 рублей
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Конные прогулки</td><td>Прогулки по живописным местам ближайшего Подмосковья.</td><td>от 1500 рублей (длительность от 1 часа)</td>
+                    </tr>
+                    <tr>
+                        <td>Аренда денника</td><td>
+                        Услуги берейтора, коваля, ветеринара не входят в стоимость.</td><td>14500 рублей/месяц</td>
+                    </tr>
+                </table>
+            </div>
+            <!--Button-->
+            <a class="btn" href="#contacts">Запись на занятие</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--Фотогалерея-->
+    <p><a name="gallery"></a></p>
+    
+    <section class = "section">
+        <div class = "container">
+            <div class="about">
+                <h1 class = "section__title">Фотогалерея</h1>
+                <div class="description">Смотрите больше фотографий на странице группы <a href="https://vk.com/kk.galaktika" title="Вконтакте">ВКонтакте</a> или <a href="https://www.instagram.com/kk_galaktika/" title="Instagram">Instagram</a>.</div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            
+            <div class = "gallery__col">
+                <div class = "gallery__item">
+                    <img class = "gallery__image" src = "assets/images/gallery/g1.jpg">
+                    <div class = "gallery__info">
+                        <div class="gallery__text">Фотосессия в полях.</div>
+                    </div>
+                </div>
+                <div class = "gallery__item">
+                    <img class = "gallery__image" src = "assets/images/gallery/g7.jpg">
+                    <div class = "gallery__info">
+                        <div class="gallery__text">Конюшня внутри и наш клубный конь Юпитер.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "gallery__col">
+                <div class = "gallery__item">
+                    <img class = "gallery__image" src = "assets/images/gallery/g4.jpg">
+                    <div class = "gallery__info">
+                        <div class="gallery__text">На фото наш клубный конь Юпитер, выступающий на соревнованиях.</div>
+                    </div>
+                </div>
+                <div class = "gallery__item">
+                    <img class = "gallery__image" src = "assets/images/gallery/g3.jpg">
+                    <div class = "gallery__info">
+                        <div class="gallery__text">На фото наша клубная лошадь Верба.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "gallery__col">
+                <div class = "gallery__item">
+                    <img class = "gallery__image" src = "assets/images/gallery/g6.jpg">
+                    <div class = "gallery__info">
+                        <div class="gallery__text">На фото наш клубный конь Соловей.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "gallery__col">
+                <div class = "gallery__item">
+                    <img class = "gallery__image" src = "assets/images/gallery/g5.jpg">
+                    <div class = "gallery__info">
+                        <div class="gallery__text">На фото наш очаровательный клубный пони Идальго.</div>
+                    </div>
+                </div>
+                <div class = "gallery__item">
+                    <img class = "gallery__image" src = "assets/images/gallery/g2.jpg">
+                    <div class = "gallery__info">
+                        <div class="gallery__text">На фото наша клубная лошадь Манона.</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!--Наши тренера-->
+    
+    <div class="trainer">
+    </div>
+    
+    <!--Часто задаваемые вопросы-->
+    <section class = "section">
+        <div class = "container">
+            
+            <div class="common-questions">
+                
+                <h1 class = "section__title">Часто задаваемые вопросы</h1>
+                
+                <div class = "accordion">
+                    <div class = "accordion__item">
+                        <div class = "accordion__header">
+                            <img class = "accordion__icon" src = "assets/images/icons/helmet.svg" width=40px>
+                            <div class = "accordion__title">Что делать, если у меня нет экипировки?</div>
+                        </div>
+                        <div class = "accordion__content">
+                            Не переживать! Основа Вашей безопасности при верховой езде - шлем. У нас имеются шлемы разных размеров, которые мы предоставляем клиентам на время занятия/прогулки. Если Вы только начинаете ездить верхом, то для тренировок подходит любая удобная одежда и обувь с небольшим каблуком, однако для регулярной езды мы все же рекомендуем обзавестись специальными бриджами и ботинками.<br>
+                        </div>
+                    </div>
+                    <div class = "accordion__item">
+                        <div class = "accordion__header">
+                            <img class = "accordion__icon" src = "assets/images/icons/equipment.svg" width=40px>
+
+                            <div class = "accordion__title">Можно ли выехать в лес/поле без сопровождения?</div>
+                        </div>
+                        <div class = "accordion__content">
+                            В нашем конном клубе такая услуга не предусмотрена. В интересах Вашей же безопасности на прогулках всегда присутствует опытный инстуктор.
+                        </div>
+                    </div>
+                    <div class = "accordion__item">
+                        <div class = "accordion__header">
+                            <img class = "accordion__icon" src = "assets/images/icons/saddle.svg" width=40px>
+                            <div class = "accordion__title">С какого возраста можно начать обучение детей верховой езде?</div>
+                        </div>
+                        <div class = "accordion__content">
+                        Ждем на занятия в КК "Галактика" детей от 4-х лет! Покатать ребенка в поводу можно в любом возрасте.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--Отзывы-->
+    
+    <div class="section--gray">
+        <div class = "container">
+            
+            <div class = "reviews">
+                <a class = "reviews__btn reviews__btn--prev" href="#">Prev</a>
+                <a class = "reviews__btn  reviews__btn--next" href="#">Next</a>
+                
+                <div class = "reviews__item">
+                    <img class = "reviews__icon" src = "assets/images/profile/brown.svg" width=140px>
+                    <div class = "reviews__text">"Большое спасибо за прогулку на Юпитире в компании Анастасии! Отдельное спасибо Анастасии за душевные и эмоциональные разговоры и Ивану за доброе отношение и комфортное пребывание на конном дворе! Обязательно приеду еще!"
+                    </div>
+                    <div class = "reviews__author">Анастасия Кузьмина
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <!--Карта-->
+    <!--
+    <p></p>
+    
+    <section class="section  section--map">
+        <div class = "container">
+            <div class = "map">
+                <h2 class = "map__title">
+                    <div><i class="fas fa-map-signs fa-2x"></i></div>
+                    <a href = "#" target="_blank">Открыть карту</a>
+                </h2>
+            </div>
+        </div>
+    </section>
+    -->
+    
+    <!--Контактная форма-->
+    <p><a name="contacts"></a></p>
+    
+    <section class="section">
+        <div class = "container">
+            <div class = "contacts">
+                <h1 class = "section__title">Контакты</h1>
+                <div class = "contacts__book">
+                    <div class = "contacts__item">
+                        <b>
+                        Записаться и задать любые Вы можете по телефонам:<br>
+                        +7 (929)664-82-85 Иван Валерьевич<br>
+                        +7 (985)443-81-82 Сабина Руслановна<br>
+                        +7 (915)273-93-01 Анастасия Романовна<br>
+                        +7 (916)522-45-84 Ольга Анатольевна<br>
+                        </b>
+                        <div class = "social-refs">
+                            <a href="https://www.instagram.com/kk_galaktika/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://vk.com/kk.galaktika" target="_blank"><i class="fab fa-vk"></i></a>   
+                        </div>
+                    </div>
+                    <div class = "contacts__item">
+                        <div class = "map">
+                            <h2 class = "map__title">
+                                <div><i class="fas fa-map-signs fa-2x"></i></div>
+                                <a href = "https://yandex.ru/maps/-/CCUUAVUzDA" target="_blank">Открыть карту</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Декорация-->
+
+    <img class="decoration" src="assets/images/forest.svg">
+    
+    <!--Подвал-->
+    
+    <div class = "footer" >
+        <p>Главная | <a href= "#"> О нас </a> | <a href= "#"> Новости </a> | <a href= "#">Услуги и цены</a> | <a href= "#" >Наши лошади</a> | <a href= "#" >Фотогалерея</a> | <a href= "#" >Контакты</a></p>
+        <div class = "icons">
+            Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+        <p><b>Copyright © 2019. КК "Галактика"</b></p>
+    </div>   
+    
+   
+</body>
+</html>
