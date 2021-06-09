@@ -1,0 +1,774 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* в хроме убирает обводку у кнопок и поля ввода */
+button:active,
+button:focus,
+input:active,
+input:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.no-scroll {
+  overflow: hidden;
+  /*без прокрутки элемента*/
+}
+
+.header {
+  display: flex;
+  /*выравнивание по центру по вертикали*/
+  align-items: center;
+  height: 104px;
+  padding-left: 34px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.m-menu {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+
+.line {
+  height: 100%;
+  width: 1px;
+  background-color: #d4d4d4;
+  margin-left: 34px;
+}
+
+.search-input {
+  background-image: url(../img/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 38px;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #a5a5a5;
+  margin-left: 34px;
+}
+
+.navigation {
+  margin-right: 44px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  /* как это работает? */
+  position: relative;
+  /* убирает подчеркивание */
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+  margin-right: 18px;
+}
+
+/* появление полосочки из середины */
+.navigation-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.navigation-link:hover:after {
+  transform: scaleX(1);
+}
+
+/* появление полосочки с левой стороны */
+/* 
+.navigation-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: width 0.2s;
+}
+
+.navigation-link:hover:after {
+  transform: width 100%;
+}
+*/
+
+.button-group {
+  height: 100%;
+}
+
+.button {
+  height: 100%;
+  cursor: pointer;
+}
+
+.sign-up {
+  color: #5671f6;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  background-color: #fff;
+  padding-left: 34px;
+  padding-right: 34px;
+  border-left: 1px solid #d4d4d4;
+}
+
+.login {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #5671f6;
+  border: none;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.mobile-buttons {
+  display: none;
+}
+
+.m-menu-button,
+.search-button {
+  padding: 5px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1130px;
+  margin: auto;
+}
+
+.film {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.film-wrapper {
+  display: flex;
+}
+
+.film-trailer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
+.poster {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 358px;
+}
+
+.trailer-button {
+  /* способ выравнивания текста и иконки внутри кнопки */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 0px 0px 5px 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* выравнивание относительно друг друга иконки и текста внутри кнопки */
+.trailer-button-text,
+.trailer-button-icon {
+  vertical-align: middle;
+}
+
+.trailer-button-icon {
+  margin-right: 14px;
+}
+
+.trailer-button-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #5671f6;
+}
+
+.film-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #363636;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.film-subtitle {
+  display: block;
+  /* данный отступ не появится у строчного элемента, надо сделать его блочным (см. выше) */
+  margin-bottom: 32px;
+  color: #a5a5a5;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.film-description {
+  font-size: 14px;
+  line-height: 150%;
+  max-width: 514px;
+  color: #363636;
+  margin-bottom: 50px;
+}
+
+.about-film {
+  /* это выровняло по ширине */
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.about-text {
+  /* это выровняло в столбик */
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 16px;
+}
+
+.about-text-bold {
+  /* строчно-блочный элемент */
+  display: inline-block;
+  width: 100px;
+  /* на случай переполняемости */
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.left-side {
+  margin-right: 40px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-counter {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  /* по вертикали */
+  align-items: center;
+  /* по горизонтали */
+  justify-content: center;
+  border: 1px solid #5671f6;
+  border-radius: 10px;
+  margin-right: 28px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #5671f6;
+}
+
+.rating-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.rating-text {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.rating-text-bold {
+  font-weight: bold;
+}
+
+.cast {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.tabs {
+  display: flex;
+  align-items: flex;
+  margin-bottom: 60px;
+}
+
+.tab {
+  cursor: pointer;
+}
+
+.section-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #a5a5a5;
+  margin-right: 30px;
+}
+
+.section-title.active {
+  color: #363636;
+  font-weight: 900;
+}
+
+.tabs-content {
+  display: none;
+  /*поле по размеру контента для Создателей*/
+  align-items: center;
+  /* возможность переноса элементов на следующую строку */
+  flex-wrap: wrap;
+  visibility: hidden;
+}
+
+.tabs-content.visible {
+  visibility: visible;
+  display: flex;
+  /*поле по размеру контента для Создателей*/
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  /* 4 карточки в строке */
+  flex-basis: 25%;
+  margin-bottom: 35px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  /* так не потеряются пропорции */
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.name {
+  margin-bottom: 6px;
+  margin-top: 0;
+  color: #5671f6;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.en-name {
+  color: #a5a5a5;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.news {
+  background-color: #f3f3f3;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.section-news-title {
+  font-weight: 900;
+  color: #000000;
+  margin-bottom: 65px;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* перенос на след строчку */
+  justify-content: space-between;
+}
+
+.news-card {
+  /* не 25%, а 20%, чтобы было расстояние между карточками */
+  flex-basis: 23%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.news-date {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.news-title {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-top: 14px;
+}
+
+.button-next {
+  display: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  cursor: pointer;
+}
+
+/* адаптив, если экран меньше 1200px */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .card-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header {
+    height: 90px;
+    padding-left: 20px;
+  }
+
+  .sign-up {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navigation {
+    margin-right: 20px;
+  }
+
+  .search-input {
+    margin-left: 20px;
+  }
+
+  .navigation-link {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .line {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .search-input {
+    margin-right: auto;
+    /*прибивает к левому краю */
+  }
+
+  .film-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .film-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .film-description,
+  .about-film {
+    margin-bottom: 30px;
+  }
+
+  .about-text-bold {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .card-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card {
+    flex-basis: 50%;
+  }
+
+  .news-card {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .m-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 68px;
+    right: 0;
+    bottom: 0;
+    height: calc(100% - 68px);
+    /*отступ снизу для кнопок Регистрация и Войти*/
+    background: #5671f6;
+  }
+
+  .m-menu.active {
+    display: flex;
+  }
+
+  .button-group {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 260px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-image: none;
+    margin: 0;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .navigation-link {
+    color: #ffffff;
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .navigation-link:last-child {
+    margin-bottom: 0;
+  }
+
+  .sign-up {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 30px;
+  }
+
+  .film {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .film-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .film-text {
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .cast {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .news {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .news-card {
+    max-width: 90%;
+  }
+
+  .button-next {
+    display: block;
+  }
+
+  .mobile-buttons {
+    display: block;
+    margin-left: auto;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .header {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  /* Icon 1 */
+
+  #nav-icon1 {
+    width: 16px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  #nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #363636;
+    border-radius: 40px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  #nav-icon1 span:nth-child(1) {
+    top: -10px;
+  }
+
+  #nav-icon1 span:nth-child(2) {
+    top: -4px;
+  }
+
+  #nav-icon1 span:nth-child(3) {
+    top: 2px;
+  }
+
+  #nav-icon1.open span:nth-child(1) {
+    top: -4px;
+    -webkit-transform: rotate(135deg) scaleX(1.2);
+    -moz-transform: rotate(135deg) scaleX(1.2);
+    -o-transform: rotate(135deg) scaleX(1.2);
+    transform: rotate(135deg) scaleX(1.2);
+  }
+
+  #nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -10px;
+  }
+
+  #nav-icon1.open span:nth-child(3) {
+    top: -4px;
+    -webkit-transform: rotate(-135deg) scaleX(1.2);
+    -moz-transform: rotate(-135deg) scaleX(1.2);
+    -o-transform: rotate(-135deg) scaleX(1.2);
+    transform: rotate(-135deg) scaleX(1.2);
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .film-title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 12px;
+  }
+
+  .film-subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 26px;
+  }
+
+  .film-description {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+
+  .about-film {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .about-text-bold {
+    display: inline-block;
+  }
+
+  .film-trailer,
+  .poster {
+    width: 100%;
+  }
+
+  .film-trailer {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .film-text {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .card {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tabs {
+    margin-bottom: 35px;
+  }
+
+  .cast {
+    padding-bottom: 50px;
+  }
+
+  .news-card {
+    flex-basis: 100%;
+  }
+}
